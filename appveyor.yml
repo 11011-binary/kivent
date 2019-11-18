@@ -140,8 +140,11 @@ build_script:
 
 
     # Create cymunk wheel (kivent_cymunk dependency)
-    echo "requisite lib cymunk not installing on windows in python 3.5+, see https://github.com/kivy/cymunk/issues/52"
-    git clone https://github.com/kivy/cymunk.git C:\projects\cymunk
+    #echo "requisite lib cymunk not installing on windows in python 3.5+, see https://github.com/kivy/cymunk/issues/52"
+    echo "making install dir"
+    mkdir C:\projects\cymunk
+    cd C:\projects\cymunk
+    git clone https://github.com/kivy/cymunk.git
     
     Check-Error
     
