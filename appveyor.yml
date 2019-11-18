@@ -92,7 +92,7 @@ build_script:
 
     Check-Error
 
-    $env:DO_TEST = "False" # switch to True when tests are available
+    $env:DO_TEST = "False" # switch to when tests are available
 
     if ($env:APPVEYOR_SCHEDULED_BUILD -eq "True"){
       $env:DO_TEST = "False"
@@ -141,7 +141,7 @@ build_script:
 
     # Create cymunk wheel (kivent_cymunk dependency)
     echo "requisite lib cymunk not installing on windows in python 3.5+, see https://github.com/kivy/cymunk/issues/52"
-    $cymunk_fixed = True
+    $cymunk_fixed = "True"
 
     if ($cymunk_fixed -eq "True") {
 
