@@ -10,9 +10,10 @@ environment:
   MSYSTEM: MINGW64
   CHERE_INVOKING: 1
   matrix:
-  - PYVER: 35
+    BITTNESS: 64
+  - PYVER: 34
     BITTNESS: 86
-  - PYVER: 35
+  - PYVER: 34
     BITTNESS: 64
   - PYVER: 36
     BITTNESS: 86
