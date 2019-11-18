@@ -141,7 +141,7 @@ build_script:
 
     # Create cymunk wheel (kivent_cymunk dependency)
     echo "requisite lib cymunk not installing on windows in python 3.5+, see https://github.com/kivy/cymunk/issues/52"
-    $cymunk_fixed = False
+    $cymunk_fixed = True
 
     if ($cymunk_fixed -eq "True") {
 
